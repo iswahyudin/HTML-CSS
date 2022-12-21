@@ -1,21 +1,18 @@
 body{
     font-family: Arial;
     margin: 0;
+    height: 0;
+    cursor: default;
 }
 
 
 header {
     height: 70px;
     width: 100%;
-    background-color: black;
-    position: fixed;
-    opacity: 0.9;
+    background-color: rgba(34, 49, 52, 0.9);
+    position:fixed;
+    top:0;
 }
-
-/* header:fixed{
-    top: 10px;
-    left: 40px;
-} */
 
 a{
     text-decoration: none;
@@ -30,11 +27,11 @@ li{
     color: tomato;
     line-height: 70px;
     padding: 0 20px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    letter-spacing: 0px;
+    letter-spacing: 5px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .header-left span{
@@ -51,8 +48,9 @@ li{
 
 .header-right{
     float: right;
-    padding: 0 200px;
+    padding: 0 20px;
 }
+
 
 .header-right a{
     line-height: 70px;
@@ -66,11 +64,11 @@ li{
 
 .header-menu:hover{
     background-color: tomato;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .top-wrapper{
-    padding: 20px;
+    padding: 50px 0 0 0;
     text-align: center;
 }
 
@@ -84,7 +82,8 @@ li{
     font-size: 30px;
     color: silver;
     font-style: normal;
-    font-weight: 4;
+    font-weight: 1;
+    letter-spacing: 9px;
 }
 
 .top-wrapper span{
@@ -92,8 +91,8 @@ li{
 }
 
 .ninjaken{
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 390px;
 }
 
 .message-wrapper{
@@ -104,17 +103,29 @@ li{
 footer{
     background-color: #2f5167;
     color:#fff;
-    height: 90px;
-    padding: 1px 0 0 10px;
+    height: 100px;
+    /* padding: 1px 0 0 10px; */
 }
 
 .footer-logo{
     float: left;
-    font-weight: bold;
-    letter-spacing: 5px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 100px;
+    padding-left: 50px;
+}
+
+.footer-list{
+    float: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    font-size: 13px;
 }
 
 .footer-list li{
-    float: right;
-    padding: 10px 20px 10px 0;
+    padding-bottom: 5px;
+}
+
+.heading{
+    padding: 7px 10px;
 }
